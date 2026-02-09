@@ -8,4 +8,5 @@ items = fetch_news(SOURCES)
 filtered = filter_news(items)
 
 if filtered:
-    send_mail(summarize(filtered))
+    # send_mail(summarize(filtered))
+    send_mail("Bot çalıştı ama filtre boş olabilir.")
