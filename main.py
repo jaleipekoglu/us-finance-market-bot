@@ -4,10 +4,8 @@ from filter import filter_news
 from summarize import summarize
 from mail import send_mail
 
-# items = fetch_news(SOURCES)
-# filtered = filter_news(items)
+items = fetch_news(SOURCES)
+filtered = filter_news(items)
 
-# if filtered:
-    # send_mail(summarize(filtered))
-
-send_mail("Bot çalıştı ama filtre boş olabilir.")
+if filtered:
+    send_mail(summarize(filtered))
