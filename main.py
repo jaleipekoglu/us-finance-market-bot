@@ -11,4 +11,4 @@ print("TOTAL:", len(items))
 print("FILTERED:", len(filtered))
 
 if filtered:
-    send_mail(summarize(filtered))
+    send_mail(summarize(items))
