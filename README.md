@@ -60,13 +60,6 @@ Sources can be added or removed without changing the rest of the system.
 
 Filtering is based on explicit keyword matching defined in `filter.py`.
 
-This is deliberate.
-
-The goal is:
-- Predictable behavior
-- Low false positives
-- Easy debugging
-
 If no items match, no summary is sent unless explicitly configured.
 
 ---
@@ -101,31 +94,6 @@ Secrets required:
   Google App Password (16 characters)
 
 Dependencies are listed in `requirements.txt`.
-
----
-
-## Design philosophy
-
-This project favors:
-
-- Determinism over intelligence
-- Transparency over convenience
-- Signal over coverage
-
-It is meant to act as a personal research filter, not an analyst.
-
----
-
-## Extending the system
-
-Possible extensions include:
-
-- Looser or structured filtering
-- Country-of-origin detection
-- Weekly aggregation
-- Optional LLM-based classification as a separate judge layer
-
-These are intentionally not included by default.
 
 ---
 
