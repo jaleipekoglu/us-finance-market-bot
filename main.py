@@ -7,5 +7,8 @@ from mail import send_mail
 items = fetch_news(SOURCES)
 filtered = filter_news(items)
 
+print("TOTAL:", len(items))
+print("FILTERED:", len(filtered))
+
 if filtered:
     send_mail(summarize(filtered))
